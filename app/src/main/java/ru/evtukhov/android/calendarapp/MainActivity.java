@@ -31,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        mChooseStartDate = (Button) findViewById(R.id.chooseStartDate);
-        mChooseEndDate = (Button) findViewById(R.id.chooseEndDate);
-        mStartDateCalendar = (CalendarView) findViewById(R.id.startDateCalendar);
-        mEndDateCalendar = (CalendarView) findViewById(R.id.endDateCalendar);
-        mBtnOK = (Button) findViewById(R.id.btnOK);
+        mChooseStartDate = findViewById(R.id.chooseStartDate);
+        mChooseEndDate = findViewById(R.id.chooseEndDate);
+        mStartDateCalendar = findViewById(R.id.startDateCalendar);
+        mEndDateCalendar = findViewById(R.id.endDateCalendar);
+        mBtnOK = findViewById(R.id.btnOK);
         mStartDateCalendar.setVisibility(View.GONE);
         mEndDateCalendar.setVisibility(View.GONE);
 

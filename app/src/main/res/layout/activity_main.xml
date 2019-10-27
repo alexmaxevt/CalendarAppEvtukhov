@@ -10,30 +10,30 @@
         android:id="@+id/chooseStartDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/chooseStartDate_margin"
         android:gravity="left|center_vertical"
         android:text="@string/app_start" />
     <Button
         android:id="@+id/chooseEndDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/chooseEndDate_margin"
         android:gravity="left|center_vertical"
         android:text="@string/app_end" />
     <CalendarView
         android:id="@+id/startDateCalendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"/>
+        android:layout_margin="@dimen/startDateCalendar_margin"/>
     <CalendarView
-        android:id="@+id/endtDateCalendar"
+        android:id="@+id/endDateCalendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#E2E2E2"/>
+        android:background="@color/colorEndDateCalendar"/>
     <Button
         android:id="@+id/btnOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/btnOK_margin"
         android:text="@string/app_button" />
 </LinearLayout>

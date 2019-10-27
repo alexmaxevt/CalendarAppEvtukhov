@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="chooseStartDate_margin">16dp</dimen>
+    <dimen name="chooseEndDate_margin">16dp</dimen>
+    <dimen name="startDateCalendar_margin">16dp</dimen>
+    <dimen name="btnOK_margin">16dp</dimen>
+</resources>

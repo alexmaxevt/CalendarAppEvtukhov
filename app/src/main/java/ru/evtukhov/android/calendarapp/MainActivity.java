@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mChooseStartDate;
     private Button mChooseEndDate;
     private CalendarView mStartDateCalendar;
-    private CalendarView mEndtDateCalendar;
+    private CalendarView mEndDateCalendar;
     private Button mBtnOK;
     private long mStartDate;
     private String mStartDateTxt;
@@ -34,23 +34,23 @@ public class MainActivity extends AppCompatActivity {
         mChooseStartDate = (Button) findViewById(R.id.chooseStartDate);
         mChooseEndDate = (Button) findViewById(R.id.chooseEndDate);
         mStartDateCalendar = (CalendarView) findViewById(R.id.startDateCalendar);
-        mEndtDateCalendar = (CalendarView) findViewById(R.id.endtDateCalendar);
+        mEndDateCalendar = (CalendarView) findViewById(R.id.endDateCalendar);
         mBtnOK = (Button) findViewById(R.id.btnOK);
         mStartDateCalendar.setVisibility(View.GONE);
-        mEndtDateCalendar.setVisibility(View.GONE);
+        mEndDateCalendar.setVisibility(View.GONE);
 
         mChooseStartDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mStartDateCalendar.setVisibility(View.VISIBLE);
-                mEndtDateCalendar.setVisibility(View.GONE);
+                mEndDateCalendar.setVisibility(View.GONE);
             }
         });
 
         mChooseEndDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mEndtDateCalendar.setVisibility(View.VISIBLE);
+                mEndDateCalendar.setVisibility(View.VISIBLE);
                 mStartDateCalendar.setVisibility(View.GONE);
             }
         });
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mEndtDateCalendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+        mEndDateCalendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int year, int month, int dayOfMonth) {
                 mEndDateTxt = year+"-"+month+"-"+dayOfMonth;
